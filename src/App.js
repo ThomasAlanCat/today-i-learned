@@ -126,6 +126,7 @@ function NewFactFrom({ setFacts, setShowForm }) {
       category &&
       textLength <= 200
     ) {
+      console.log("submit");
       // 3. Create a new fact object
       // const newFact = {
       //   id: Math.round(Math.random() * 10000000),
@@ -173,7 +174,7 @@ function NewFactFrom({ setFacts, setShowForm }) {
       <input
         value={source}
         type="text"
-        placeholder="Thrustworthy source..."
+        placeholder="Trustworthy website..."
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}
       />
